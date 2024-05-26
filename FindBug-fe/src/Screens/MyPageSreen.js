@@ -1,30 +1,49 @@
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { GRAY } from '../colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import MyPageList from '../components/MyPageList';
+=======
+import { FlatList, StyleSheet, Text, View } from "react-native";
+import { GRAY } from "../styles/color";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import MyPageList from "../components/MyPageList";
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
 
 const MyPageScreen = ({ navigation }) => {
   const insets = useSafeAreaInsets();
   const menu = [
     {
       id: 1,
-      title: '감지영상',
+      title: "감지영상",
       onPress: () => {
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
         navigation.push('DetectedVideo');
+=======
+        navigation.push("DetectedVideoScreen");
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
       },
     },
     {
       id: 2,
-      title: '카메라 정보 수정',
+      title: "카메라 정보 수정",
       onPress: () => {
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
         navigation.push('ModifyCameraInfo');
+=======
+        navigation.push("ModifyCameraInfoScreen");
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
       },
     },
     {
       id: 3,
-      title: '회원 정보 수정',
+      title: "회원 정보 수정",
       onPress: () => {
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
         navigation.push('ModifyUserInfo');
+=======
+        navigation.push("ModifyUserInfoScreen");
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
       },
     },
   ];
@@ -71,18 +90,18 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
   },
   userinfo: {
-    width: '100%',
+    width: "100%",
     paddingHorizontal: 24,
     marginVertical: 10,
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
+    flexDirection: "row",
+    justifyContent: "flex-start",
   },
   text: {
     marginLeft: 16,
   },
   username: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   userstatus: {
     fontSize: 16,
@@ -98,7 +117,7 @@ const styles = StyleSheet.create({
   },
   logoutcontainer: {
     flex: 1,
-    flexDirection: 'row-reverse',
+    flexDirection: "row-reverse",
     paddingHorizontal: 24,
   },
   logout: {
