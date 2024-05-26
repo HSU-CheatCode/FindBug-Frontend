@@ -1,5 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { GRAY } from '../styles/color';
+import { TypoStyle } from 'styles/font';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import MyPageList from '../components/MyPageList';
 
