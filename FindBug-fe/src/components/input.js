@@ -1,16 +1,23 @@
+<<<<<<< Updated upstream:FindBug-fe/src/components/input.js
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { BLACK, GRAY, PRIMARY } from '../colors';
 import { forwardRef, useState } from 'react';
+=======
+import { StyleSheet, Text, TextInput, View } from "react-native";
+import PropTypes from "prop-types";
+import { BLACK, GRAY, PRIMARY } from "styles/color";
+import { forwardRef, useState } from "react";
+>>>>>>> Stashed changes:components/input.js
 
 export const keyboardTypes = {
-  DEFAULT: 'default',
-  EMAIL: 'email-address',
+  DEFAULT: "default",
+  EMAIL: "email-address",
 };
 
 export const returnKeyTypes = {
-  NEXT: 'next',
-  DONE: 'done',
+  NEXT: "next",
+  DONE: "done",
 };
 
 const Input = forwardRef(
@@ -51,13 +58,13 @@ const Input = forwardRef(
             ]}
             placeholder={placeholder ?? title}
             placeholderTextColor={GRAY.DEFAULT}
-            autoCapitalize={'none'}
+            autoCapitalize={"none"}
             autoCorrect={false}
             //keyboardType={keyboardType}
             //returnKeyType={returnKeyType}
-            textContentType={'none'}
+            textContentType={"none"}
             //secureTextEntry={secureTextEntry}
-            keyboardAppearance={'light'}
+            keyboardAppearance={"light"}
             onBlur={() => setIsFocused(false)}
             onFocus={() => setIsFocused(true)}
           />
@@ -66,7 +73,7 @@ const Input = forwardRef(
     );
   }
 );
-Input.displayName = 'Input';
+Input.displayName = "Input";
 
 Input.propTypes = {
   title: PropTypes.string,
@@ -79,28 +86,31 @@ Input.propTypes = {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: "100%",
     paddingHorizontal: 20,
     marginVertical: 10,
   },
   title: {
     marginBottom: 4,
-    color: GRAY.DEFAULT,
+    color: BLACK,
+    fontWeight: "bold",
+    fontSize: 16,
   },
   focusedTitle: {
-    fontWeight: '600',
+    fontWeight: "600",
     color: PRIMARY.DEFAULT,
   },
   hasValueTitle: {
     color: BLACK,
   },
   input: {
-    borderWidth: 1,
     borderRadius: 8,
     borderColor: GRAY.DEFAULT,
     paddingHorizontal: 20,
+    marginTop: 8,
     height: 42,
-    paddingLeft: 30,
+    paddingLeft: 20,
+    backgroundColor: GRAY.SUPERLIGHT,
   },
   focusedInput: {
     borderWidth: 2,

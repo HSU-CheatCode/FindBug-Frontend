@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { GRAY } from '../colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -6,6 +7,13 @@ import MyPageList from '../components/MyPageList';
 =======
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { GRAY } from "../styles/color";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import MyPageList from "../components/MyPageList";
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
+=======
+import { FlatList, StyleSheet, Text, View } from "react-native";
+import { GRAY } from "../styles/color";
+import { TypoStyle } from "styles/font";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import MyPageList from "../components/MyPageList";
 >>>>>>> Stashed changes:Screens/MyPageScreen.js
@@ -18,7 +26,11 @@ const MyPageScreen = ({ navigation }) => {
       title: "감지영상",
       onPress: () => {
 <<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
         navigation.push('DetectedVideo');
+=======
+        navigation.push("DetectedVideoScreen");
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
 =======
         navigation.push("DetectedVideoScreen");
 >>>>>>> Stashed changes:Screens/MyPageScreen.js
@@ -29,7 +41,11 @@ const MyPageScreen = ({ navigation }) => {
       title: "카메라 정보 수정",
       onPress: () => {
 <<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
         navigation.push('ModifyCameraInfo');
+=======
+        navigation.push("ModifyCameraInfoScreen");
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
 =======
         navigation.push("ModifyCameraInfoScreen");
 >>>>>>> Stashed changes:Screens/MyPageScreen.js
@@ -40,7 +56,11 @@ const MyPageScreen = ({ navigation }) => {
       title: "회원 정보 수정",
       onPress: () => {
 <<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
+<<<<<<< Updated upstream:FindBug-fe/src/Screens/MyPageSreen.js
         navigation.push('ModifyUserInfo');
+=======
+        navigation.push("ModifyUserInfoScreen");
+>>>>>>> Stashed changes:Screens/MyPageScreen.js
 =======
         navigation.push("ModifyUserInfoScreen");
 >>>>>>> Stashed changes:Screens/MyPageScreen.js
@@ -59,7 +79,7 @@ const MyPageScreen = ({ navigation }) => {
         <View style={styles.button}></View>
         <View style={styles.text}>
           <Text style={styles.username}>곽승준</Text>
-          <Text style={styles.userstatus}>이 세상의 선각자</Text>
+          <Text style={styles.userstatus}>이 세계의 선각자</Text>
         </View>
       </View>
       <View>
@@ -98,6 +118,7 @@ const styles = StyleSheet.create({
   },
   text: {
     marginLeft: 16,
+    paddingVertical: 12,
   },
   username: {
     fontSize: 24,

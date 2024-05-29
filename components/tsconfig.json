@@ -1,0 +1,12 @@
+{
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@assets/*": ["assets/*"],
+            "@styles/*": ["styles/*"],
+            "@components/*": ["components/*"],
+            "@routers/*": ["routers/*"]
+        }
+    }
+}
