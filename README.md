@@ -12,6 +12,7 @@
 </div>
 
 #### 1. 개발 환경
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 - Front : HTML, React-native
 - Back-end :
 - 디버깅 : Github, Github Issues, Github Project
