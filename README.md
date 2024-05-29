@@ -1,5 +1,7 @@
 ## 사진 넣기 
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+
 ## 프로젝트 개요
 
 ### 개발 기간
@@ -69,6 +71,7 @@
 ## 앞으로의 방향성 
 
 <br>
+
 
 ## 프로젝트 후기
 ### 곽승준
