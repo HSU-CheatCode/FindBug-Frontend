@@ -12,9 +12,9 @@
 ## 팀원 구성
 <div align="center">
 
-| **고지연** | **김민제** | **양희지** | **지창언** |
-| :------: |  :------: | :------: | :------: |
-| [<img src="" height=150 width=150> <br/> ](깃허브 링크) | [<img src="" height=150 width=150> <br/> ](깃허브 링크) | [<img src="" height=150 width=150> <br/> ](깃허브 링크) | [<img src="" height=150 width=150> <br/>](깃허브 링크) |
+| **곽승준** | **김민규** | **박종범** | **배수연** || **송효재** |
+| :------: |  :------: | :------: | :------: |:------: |
+| [<img src="" height=150 width=150> <br/> ](깃허브 링크) | [<img src="" height=150 width=150> <br/> ](깃허브 링크) | [<img src="" height=150 width=150> <br/> ](깃허브 링크) | [<img src="" height=150 width=150> <br/>](깃허브 링크) |[<img src="https://github.com/HSU-CheatCode/FindBug-Frontend/issues/1#issue-2323720491" height=150 width=150> <br/>] @lanapi](https://github.com/lanapi )|
 
 </div>
 
