@@ -1,8 +1,14 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { GRAY } from '../styles/color';
+<<<<<<< Updated upstream
 import { TypoStyle } from 'styles/font';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import MyPageList from '../components/MyPageList';
+=======
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import MyPageList from '../components/MyPageList';
+import { TypoStyle } from 'styles/font';
+>>>>>>> Stashed changes
 
 const MyPageScreen = ({ navigation }) => {
   const insets = useSafeAreaInsets();

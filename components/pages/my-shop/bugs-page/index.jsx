@@ -1,5 +1,8 @@
 import HorizontalBlank from 'components/atoms/HorizontalBlank';
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 const angry = require('@assets/icons/angry_icon.png');
 import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -18,7 +21,7 @@ const BugsPage = () => {
             <HorizontalBlank height={30} />
             <Image style={styles.redImage} source={angry} />
             <HorizontalBlank height={40} />
-            <Text style={styles.redSemiBoldText}>벌레가 나타났어요!</Text>
+            <Text style={styles.redSemiBoldText}>일주일 내로 발견된 벌레가 있습니다.</Text>
             <HorizontalBlank height={120} />
             <TouchableOpacity
                 style={styles.button}

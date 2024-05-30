@@ -19,6 +19,11 @@
 import React from 'react';
 import { StyleSheet, View, BackHandler } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
+<<<<<<< Updated upstream
+=======
+import { ColorStyle } from 'styles/color';
+import { TypoStyle } from 'styles/font';
+>>>>>>> Stashed changes
 
 const DetectedVideoScreen = ({ navigation }) => {
     useFocusEffect(
@@ -42,6 +47,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+<<<<<<< Updated upstream
+=======
+    fontFamily: TypoStyle.SemiBold,
+    color: ColorStyle.White,
+>>>>>>> Stashed changes
   },
 });
 
