@@ -12,6 +12,7 @@ const BugDetected = memo(({ item }) => {
           resizeMode="contain"
           imageBackgroundColor={GRAY.DEFAULT}
           style={{ width: 159, height: 100 }}
+          source={{ uri: item.image }}
         />
       </View>
       <View style={styles.textcontainer}>

@@ -4,12 +4,14 @@ import Button from "../components/Button";
 import SafeInputView from "../components/SafeInputViews";
 import Input, { keyboardTypes, returnKeyTypes } from "../components/input";
 import Toast from "react-native-toast-message";
+import axios from "axios";
 
 const ModifyCameraInfoScreen = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [memo, setMemo] = useState("");
   const [disabled, setDisabled] = useState(true);
+  const [created, setCreated] = useState(null);
   const numberRef = useRef(null);
   const memoRef = useRef(null);
 
@@ -18,14 +20,32 @@ const ModifyCameraInfoScreen = () => {
   }, [name, number]);
 
   const onSubmit = () => {
+    const cameraType = "RASPBERRYPI_3_B_PLUS";
     if (!disabled) {
       Keyboard.dismiss();
-      Toast.show({
-        type: "success",
-        text1: "저장되었습니다.",
-      });
+      const response = axios
+        .post(`http://findbugs.kro.kr/myPage/1/camera`, {
+          name: name,
+          imei: number,
+          description: memo,
+          cameraType: cameraType,
+        })
+        .then((response) => {
+          console.log(response.data.created);
+          Toast.show({
+            type: "success",
+            text1: "저장되었습니다.",
+          });
+        })
+        .catch((error) => {
+          Toast.show({
+            type: "error",
+            text1: "저장이 전송되지 않았습니다.",
+          });
+        });
     }
   };
+
   return (
     <SafeInputView>
       <View style={styles.container}>
@@ -56,7 +76,7 @@ const ModifyCameraInfoScreen = () => {
           placeholder={"자유롭게 입력하시오."}
           keyboardType={keyboardTypes.DEFAULT}
           returnKeyType={returnKeyTypes.NEXT}
-          onSubmitEditing={() => memoRef.current.focus()}
+          onSubmitEditing={() => Keyboard.dismiss()}
         />
       </View>
       <View style={styles.buttonContainer}>

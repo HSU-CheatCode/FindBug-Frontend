@@ -2,17 +2,11 @@
 import "react-native-gesture-handler";
 import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
 import { useFonts } from "expo-font";
-<<<<<<< Updated upstream
-import Router from "./routers";
-import HomeDrawer from "@routers/HomeDrawer";
-import { NavigationContainer } from "@react-navigation/native";
-=======
 import Router from "./routers/Stack";
 import { NavigationContainer } from "@react-navigation/native";
 import "react-native-gesture-handler";
 import DrawerRouter from "./routers/Drawer";
 import Toast from "react-native-toast-message";
->>>>>>> Stashed changes
 
 export default function App() {
   // 폰트 적용
@@ -26,15 +20,6 @@ export default function App() {
 
   if (!fontsLoaded && !fontError) return null;
   return (
-<<<<<<< Updated upstream
-    <NavigationContainer>
-      <SafeAreaView style={styles.container}>
-        <Router />
-        <HomeDrawer />
-        <StatusBar />
-      </SafeAreaView>
-    </NavigationContainer>
-=======
     <>
       <NavigationContainer>
         <SafeAreaView style={styles.container}>
@@ -44,7 +29,6 @@ export default function App() {
       </NavigationContainer>
       <Toast />
     </>
->>>>>>> Stashed changes
   );
 }
 
